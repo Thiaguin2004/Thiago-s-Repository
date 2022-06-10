@@ -17,8 +17,7 @@ mysqli_query($conn,$sql) or die("Erro ao tentar VERIFICAR LOGIN");
 echo $sql;
 
 if($result = mysqli_query($conn, $sql)){
-    if(mysqli_num_rows($result) > 0)
-    {
+     if(mysqli_num_rows($result) > 0){
          while($row = mysqli_fetch_array($result))
          {
              if($cpf!=$row['cpf']){
@@ -29,7 +28,9 @@ if($result = mysqli_query($conn, $sql)){
              }else{
                header("Location:Central.php?token=logado");
              }
-            }}}
+         }
+      }
+   }
 
 mysqli_close($conn);
 
