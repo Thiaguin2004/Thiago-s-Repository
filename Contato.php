@@ -154,10 +154,13 @@
                         <h5 class="text-center"> <a href=""> Acesso Rápido </a></h5>
                         <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
                         <ul class="list-unstyled">
-                            <li><a href="Bancos.html">Bancos</a></li>
-                            <li><a href="Contato.html">Contato</a></li>
+                            <li><a href="<?php if($_GET['token']=="logado"){echo"/sistemakiwi/Bancos.php?token=logado";}
+                             else if($_GET['token']!="logado"){echo"/sistemakiwi/Bancos.php";} ?>">Bancos</a></li>
                             <li><a href="">Serviços</a></li>
-                            <li><a href="">Filas de Espera</a></li>
+                            <li><a href="<?php if($_GET['token']=="logado"){echo"/sistemakiwi/Perfil.php?token=logado";}
+                             else if($_GET['token']!="logado"){echo"/sistemakiwi/Perfil.php";} ?>">Perfil</a></li>
+                            <li><a href="<?php if($_GET['token']=="logado"){echo"/sistemakiwi/Contato.php?token=logado";}
+                             else if($_GET['token']!="logado"){echo"/sistemakiwi/Contato.php";} ?>">Contato</a></li>
                         </ul>
                     </div>
         
