@@ -1,5 +1,6 @@
-<?php if($_GET['token']!="logado"){
-    header("Location:Login.php");
+<?php $token = $_GET['token'];
+if($token!="logado"){
+header("Location:Login.php");
 }?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -37,23 +38,19 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php if($_GET['token']=="logado"){echo"/sistemakiwi/Central.php?token=logado";}
-                             else if($_GET['token']!="logado"){echo"/sistemakiwi/Central.php";} ?>">Página Central</a>
+                        <a class="nav-link" href=<?php echo"/sistemakiwi/Central.php?token=$token"; ?>>Página Central</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="product.php">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=<?php if($_GET['token']=="logado"){echo"/sistemakiwi/Bancos.php?token=logado";}
-                             else if($_GET['token']!="logado"){echo"/sistemakiwi/Bancos.php";} ?>>Bancos</a>
+                        <a class="nav-link" href=<?php echo"/sistemakiwi/Bancos.php?token=$token"; ?>>Bancos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=<?php if($_GET['token']=="logado"){echo"/sistemakiwi/Contato.php?token=logado";}
-                             else if($_GET['token']!="logado"){echo"/sistemakiwi/Contato.php";} ?>>Contato</a>
+                        <a class="nav-link" href=<?php echo"/sistemakiwi/Contato.php?token=$token"; ?>>Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=<?php if($_GET['token']=="logado"){echo"/sistemakiwi/Equipe.php?token=logado";}
-                             else if($_GET['token']!="logado"){echo"/sistemakiwi/Equipe.php";} ?>>Equipe</a>
+                        <a class="nav-link" href=<?php echo"/sistemakiwi/Equipe.php?token=$token"; ?>>Equipe</a>
                     </li>
                 </ul>
     
