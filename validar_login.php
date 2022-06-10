@@ -26,7 +26,7 @@ if($result = mysqli_query($conn, $sql)){
             else if($senha!=$row['senha']){
                header("Location:Login.php");
             }else{
-            header("Location:Central.php?token=logado");
+            header("Location:Central.php?token=logado&cpf=$cpf");
             }
          }
       }
