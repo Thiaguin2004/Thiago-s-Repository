@@ -212,13 +212,10 @@ header("Location:Login.php");
                         <h5 class="text-center"> <a href=""> Acesso Rápido </a></h5>
                         <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
                         <ul class="list-unstyled">
-                            <li><a href="<?php if($_GET['token']=="logado"){echo"/sistemakiwi/Bancos.php?token=logado";}
-                             else if($_GET['token']!="logado"){echo"/sistemakiwi/Bancos.php";} ?>">Bancos</a></li>
+                            <li><a href=<?php echo"/sistemakiwi/Bancos.php?token=$token"; ?>>Bancos</a></li>
                             <li><a href="">Serviços</a></li>
-                            <li><a href="<?php if($_GET['token']=="logado"){echo"/sistemakiwi/Perfil.php?token=logado";}
-                             else if($_GET['token']!="logado"){echo"/sistemakiwi/Perfil.php";} ?>">Perfil</a></li>
-                            <li><a href="<?php if($_GET['token']=="logado"){echo"/sistemakiwi/Contato.php?token=logado";}
-                             else if($_GET['token']!="logado"){echo"/sistemakiwi/Contato.php";} ?>">Contato</a></li>
+                            <li><a href=<?php echo"/sistemakiwi/Perfil.php?token=$token"; ?>>Perfil</a></li>
+                            <li><a href=<?php echo"/sistemakiwi/Contato.php?token=$token"; ?>>Contato</a></li>
                         </ul>
                     </div>
         
