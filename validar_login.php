@@ -20,14 +20,14 @@ if($result = mysqli_query($conn, $sql)){
      if(mysqli_num_rows($result) > 0){
          while($row = mysqli_fetch_array($result))
          {
-             if($cpf!=$row['cpf']){
-                header("Location:Login.php");
-             }
-             else if($senha!=$row['senha']){
-                header("Location:Login.php");
-             }else{
-               header("Location:Central.php?token=logado");
-             }
+            if($cpf!=$row['cpf']){
+               header("Location:Login.php");
+            }
+            else if($senha!=$row['senha']){
+               header("Location:Login.php");
+            }else{
+            header("Location:Central.php?token=logado");
+            }
          }
       }
    }
