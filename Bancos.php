@@ -53,7 +53,7 @@ header("Location:Login.php");
                 </ul>
                 
                 <form class="form-inline my-2 my-lg-0">
-                    <a class="btn btn-success btn-sm ml-3" href="Perfil.php">
+                <a class="btn btn-success btn-sm ml-3" href=<?php echo"/sistemakiwi/Perfil.php?token=$token"; ?>>
                         <img class="icon" style="width: 20px;" src="imagens/IconFila.png" alt="">
                         <i class="fa "></i> Perfil
                     </a>

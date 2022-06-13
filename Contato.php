@@ -55,8 +55,7 @@ header("Location:Login.php");
 
             <form class="form-inline my-2 my-lg-0">
                 <div class="input-group input-group-sm">
-                <a class="btn btn-success btn-sm ml-3" href=<?php if($_GET['token']=="logado"){echo"/sistemakiwi/Perfil.php?token=logado";}
-                             else if($_GET['token']!="logado"){echo"/sistemakiwi/Perfil.php";} ?>>
+                <a class="btn btn-success btn-sm ml-3" href=<?php echo"/sistemakiwi/Perfil.php?token=$token"; ?>>
                     <img class="icon" style="width: 20px;" src="imagens/IconFila.png" alt="">
                     <i class="fa "></i> Perfil
                 </a>
