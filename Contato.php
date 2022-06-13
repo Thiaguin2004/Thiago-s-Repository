@@ -65,6 +65,7 @@ header("Location:Login.php");
     </div>
 </nav>
 <input type="text" name="token" class="form-control" hidden value="<?php $_GET['token'];?>" />
+<input type="text" name="token" class="form-control" hidden value="<?php $_GET['cpf'];?>" />
     <main>
         <section class="text-center">
             <div class="container">
