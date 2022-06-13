@@ -189,6 +189,7 @@ header("Location:Login.php");
 
 </div>
 <input type="text" name="token" class="form-control" hidden value="<?php $_GET['token'];?>" />
+<input type="text" name="token" class="form-control" hidden value="<?php $_GET['cpf'];?>" />
 </section>
 <div class="separator"> ♦ </div>
 <!-- Fim do centro do site -->
