@@ -162,6 +162,7 @@ header("Location:Login.php");
                 </ul>
             </div>
             <input type="text" name="token" class="form-control" hidden value="<?php $_GET['token'];?>" />
+            <input type="text" name="token" class="form-control" hidden value="<?php $_GET['cpf'];?>" />
             <div class="col-md-4 col-lg-3 col-xl-3">
                 <h5 class="text-center"> <a href=""> Meios de Contatos </a></h5>
                 <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
