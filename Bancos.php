@@ -1,4 +1,4 @@
-<?php $token = $_GET['cpf'];
+<?php $cpf = $_GET['cpf'];
 $token = $_GET['token'];
 if($token!="logado"){
 header("Location:Login.php");
