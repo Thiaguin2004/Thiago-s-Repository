@@ -1,4 +1,5 @@
-<?php $token = $_GET['token'];
+<?php $cpf = $_GET['cpf'];
+$token = $_GET['token'];
 if($token!="logado"){
 header("Location:Login.php");
 }?>
@@ -34,24 +35,24 @@ header("Location:Login.php");
                     <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href=<?php echo"/sistemakiwi/Central.php?token=$token"; ?>>Página Central</a>
+                                <a class="nav-link" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf"; ?>>Página Central</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="product.php">Serviços</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href=<?php echo"/sistemakiwi/Bancos.php?token=$token"; ?>>Bancos</a>
+                                <a class="nav-link" href=<?php echo"/sistemakiwi/Bancos.php?token=$token&cpf=$cpf"; ?>>Bancos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href=<?php echo"/sistemakiwi/Contato.php?token=$token"; ?>>Contato</a>
+                                <a class="nav-link" href=<?php echo"/sistemakiwi/Contato.php?token=$token&cpf=$cpf"; ?>>Contato</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href=<?php echo"/sistemakiwi/Equipe.php?token=$token"; ?>>Equipe</a>
+                                <a class="nav-link" href=<?php echo"/sistemakiwi/Equipe.php?token=$token&cpf=$cpf"; ?>>Equipe</a>
                             </li>
                         </ul>
             
                         <form class="form-inline my-2 my-lg-0">
-                            <a class="btn btn-success btn-sm ml-3" href=<?php echo"/sistemakiwi/Perfil.php?token=$token"; ?>>
+                            <a class="btn btn-success btn-sm ml-3" href=<?php echo"/sistemakiwi/Perfil.php?token=$token&cpf=$cpf"; ?>>
                                 <img class="icon" style="width: 20px;" src="imagens/IconFila.png" alt="">
                                 <i class="fa "></i> Perfil
                             </a>
@@ -420,10 +421,10 @@ header("Location:Login.php");
                         <h5 class="text-center"> <a href=""> Acesso Rápido </a></h5>
                         <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
                         <ul class="list-unstyled">
-                            <li><a href=<?php echo"/sistemakiwi/Bancos.php?token=$token"; ?>>Bancos</a></li>
+                            <li><a href=<?php echo"/sistemakiwi/Bancos.php?token=$token&cpf=$cpf"; ?>>Bancos</a></li>
                             <li><a href="">Serviços</a></li>
-                            <li><a href=<?php echo"/sistemakiwi/Perfil.php?token=$token"; ?>>Perfil</a></li>
-                            <li><a href=<?php echo"/sistemakiwi/Contato.php?token=$token"; ?>>Contato</a></li>
+                            <li><a href=<?php echo"/sistemakiwi/Perfil.php?token=$token&cpf=$cpf"; ?>>Perfil</a></li>
+                            <li><a href=<?php echo"/sistemakiwi/Contato.php?token=$token&cpf=$cpf"; ?>>Contato</a></li>
                         </ul>
                     </div>
         
