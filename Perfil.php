@@ -2,7 +2,6 @@
 $token = $_GET['token'];
 if($token!="logado"){
 header("Location:Login.php");}
-
 include ("dados.php");
 ?>
 
