@@ -2,6 +2,8 @@
 $token = $_GET['token'];
 if($token!="logado"){
 header("Location:Login.php");
+
+
 }?>
 
 <!DOCTYPE html>
@@ -127,15 +129,8 @@ header("Location:Login.php");
                                 <div class="form-group">
                                     
                                     <div class="col-xs-6">
-                                        <label for="phone"><h4>Telefone</h4></label>
-                                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefone" title="Entre com seu telefone.">
-                                    </div>
-                                </div>
-                    
-                                <div class="form-group">
-                                    <div class="col-xs-6">
-                                        <label for="mobile"><h4>Celular</h4></label>
-                                        <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Celular" title="Entre com seu celular.">
+                                        <label for="password"><h4>Senha</h4></label>
+                                        <input type="password" class="form-control" name="password" id="password" placeholder="Senha" title="Entre com sua senha.">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -146,26 +141,19 @@ header("Location:Login.php");
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    
                                     <div class="col-xs-6">
-                                        <label for="email"><h4>Endereço</h4></label>
-                                        <input type="email" class="form-control" id="location" placeholder="Endereço" title="Entre com seu endereço">
+                                        <label for="mobile"><h4>Celular</h4></label>
+                                        <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Celular" title="Entre com seu celular.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     
                                     <div class="col-xs-6">
-                                        <label for="password"><h4>Senha</h4></label>
-                                        <input type="password" class="form-control" name="password" id="password" placeholder="Senha" title="Entre com sua senha.">
+                                        <label for="sex"><h4>Sexo</h4></label>
+                                        <input type="text" class="form-control" id="sex" placeholder="Sexo" title="Entre com seu sexo">
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    
-                                    <div class="col-xs-6">
-                                        <label for="password2"><h4>Reescreva a senha</h4></label>
-                                        <input type="password" class="form-control" name="password2" id="password2" placeholder="Senha" title="Entre com sua senha.">
-                                    </div>
-                                </div>
+                                
                                 <div class="form-group">
                                     <div class="col-xs-12">
                                             <br>
