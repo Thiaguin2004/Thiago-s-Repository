@@ -4,7 +4,6 @@ if($token!="logado"){
 header("Location:Login.php");
 
 include ("dados.php");
-
 ?>
 
 <!DOCTYPE html>
