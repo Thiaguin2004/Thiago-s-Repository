@@ -3,26 +3,9 @@ $token = $_GET['token'];
 if($token!="logado"){
 header("Location:Login.php");
 
-$sql = "SELECT cpf, nome, sobrenome, senha, email, celular, sexo FROM usuarios WHERE cpf=$cpf";
-mysqli_query($conn,$sql) or die("Erro ao tentar VERIFICAR LOGIN");
-echo $sql;
+include ("dados.php");
 
-if($result = mysqli_query($conn, $sql)){
-     if(mysqli_num_rows($result) > 0){
-         while($row = mysqli_fetch_array($result))
-         {
-            $nome = $_GET['nome'];
-            $sobrenome = $_GET['sobrenome'];
-            $senha = $_GET['senha'];
-            $email = $_GET['email'];
-            $celular = $_GET['celular'];
-            $sexo = $_GET['sexo'];
-         }
-      }
-   }
-
-mysqli_close($conn);
-}?>
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -133,14 +116,14 @@ mysqli_close($conn);
                                     
                                     <div class="col-xs-6">
                                         <label for="first_name"><h4>Nome</h4></label>
-                                        <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Nome" title="Entre com seu nome.">
+                                        <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Nome" title="Entre com seu nome." value="<?php echo $nome;?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     
                                     <div class="col-xs-6">
                                         <label for="last_name"><h4>Sobrenome</h4></label>
-                                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Sobrenome" title="Entre com seu sobrenome.">
+                                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Sobrenome" title="Entre com seu sobrenome." value="<?php echo $sobrenome;?>">
                                     </div>
                                 </div>
                     
@@ -148,27 +131,27 @@ mysqli_close($conn);
                                     
                                     <div class="col-xs-6">
                                         <label for="password"><h4>Senha</h4></label>
-                                        <input type="password" class="form-control" name="password" id="password" placeholder="Senha" title="Entre com sua senha.">
+                                        <input type="password" class="form-control" name="password" id="password" placeholder="Senha" title="Entre com sua senha." value="<?php echo $senha;?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     
                                     <div class="col-xs-6">
                                         <label for="email"><h4>Email</h4></label>
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="seu@email.com" title="Entre com seu e-mail.">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="seu@email.com" title="Entre com seu e-mail." value="<?php echo $email;?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-xs-6">
                                         <label for="mobile"><h4>Celular</h4></label>
-                                        <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Celular" title="Entre com seu celular.">
+                                        <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Celular" title="Entre com seu celular." value="<?php echo $celular;?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     
                                     <div class="col-xs-6">
                                         <label for="sex"><h4>Sexo</h4></label>
-                                        <input type="text" class="form-control" id="sex" placeholder="Sexo" title="Entre com seu sexo">
+                                        <input type="text" class="form-control" id="sex" placeholder="Sexo" title="Entre com seu sexo" value="<?php echo $sexo;?>">
                                     </div>
                                 </div>
                                 
