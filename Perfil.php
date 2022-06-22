@@ -1,7 +1,7 @@
 <?php $cpf = $_GET['cpf'];
 $token = $_GET['token'];
 if($token!="logado"){
-header("Location:Login.php");
+header("Location:Login.php");}
 
 include ("dados.php");
 ?>
