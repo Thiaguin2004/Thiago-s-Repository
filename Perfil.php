@@ -3,7 +3,25 @@ $token = $_GET['token'];
 if($token!="logado"){
 header("Location:Login.php");
 
+$sql = "SELECT cpf, nome, sobrenome, senha, email, celular, sexo FROM usuarios WHERE cpf=$cpf";
+mysqli_query($conn,$sql) or die("Erro ao tentar VERIFICAR LOGIN");
+echo $sql;
 
+if($result = mysqli_query($conn, $sql)){
+     if(mysqli_num_rows($result) > 0){
+         while($row = mysqli_fetch_array($result))
+         {
+            $nome = $_GET['nome'];
+            $sobrenome = $_GET['sobrenome'];
+            $senha = $_GET['senha'];
+            $email = $_GET['email'];
+            $celular = $_GET['celular'];
+            $sexo = $_GET['sexo'];
+         }
+      }
+   }
+
+mysqli_close($conn);
 }?>
 
 <!DOCTYPE html>
