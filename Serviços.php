@@ -35,7 +35,7 @@ header("Location:Login.php");
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <img src="imagens/Logo.png" style="width: 50px; " alt="">
-            <a style="font-family:'Times New Roman', Times, serif" class="navbar-brand" href="index.html">Kiwii</a>
+            <a style="font-family:'Times New Roman', Times, serif" class="navbar-brand" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf"; ?>>Kiwii</a>
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
                     aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
