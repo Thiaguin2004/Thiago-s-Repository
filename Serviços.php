@@ -222,26 +222,26 @@ header("Location:Login.php");
                                             aria-current="true">
                                             Selecione o serviço
                                         </button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Cadastro";?>
-                                        class="btn btn-light">Cadastro</button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Cartao";?>
-                                        class="btn btn-light">Cartão</button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Alteracao";?> class="btn btn-light">Alteração
-                                            de dados</button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Cheque";?> class="btn btn-light">Cheque
-                                            especial</button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Transferencias";?>
-                                        class="btn btn-light">Transferências</button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Pagamentos";?>
-                                        class="btn btn-light">Pagamentos</button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Extrato";?>
-                                        class="btn btn-light">Extrato</button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Tarifas";?>
-                                        class="btn btn-light">Tarifas</button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Emprestimo";?>
-                                        class="btn btn-light">Empréstimo</button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Seguro";?>
-                                        class="btn btn-light">Seguro</button>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Cadastro";?>
+                                        class="btn btn-light">Cadastro</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Cartao";?>
+                                        class="btn btn-light">Cartão</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Alteracao";?> class="btn btn-light">Alteração
+                                            de dados</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Cheque";?> class="btn btn-light">Cheque
+                                            especial</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Transferencias";?>
+                                        class="btn btn-light">Transferências</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Pagamentos";?>
+                                        class="btn btn-light">Pagamentos</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Extrato";?>
+                                        class="btn btn-light">Extrato</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Tarifas";?>
+                                        class="btn btn-light">Tarifas</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Emprestimo";?>
+                                        class="btn btn-light">Empréstimo</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Seguro";?>
+                                        class="btn btn-light">Seguro</a>
                                     </ul>
 
                                 </div>
@@ -333,12 +333,12 @@ header("Location:Login.php");
                                             aria-current="true">
                                             Canais de Atendimento
                                         </button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Whatsapp";?>
-                                        class="btn btn-light">Whatsapp</button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Ligacao";?>
-                                        class="btn btn-light">Ligação</button>
-                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&SMS";?>
-                                        class="btn btn-light">SMS</button>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Whatsapp";?>
+                                        class="btn btn-light">Whatsapp</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Ligacao";?>
+                                        class="btn btn-light">Ligação</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&SMS";?>
+                                        class="btn btn-light">SMS</a>
                                     </div>
 
                                 </div>
