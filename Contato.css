@@ -1,15 +1,21 @@
-.pagination {
-    margin-top: 20px;
-}
-footer {
-    padding: 40px;
-}
-footer a {
-    color: #f8f9fa!important
+.img-fluid {
+    overflow: hidden;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    box-shadow: 4px 4px 4px;
+    border-radius: 5px;
 }
 
-.icon {
-    width: 20px;
+img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+footer a {
+    color: #f8f9fa !important
 }
 
 body {
@@ -21,26 +27,4 @@ main {
     margin: 25px;
     padding: 20px;
     border-radius: 15px;
-}
-
-.separator {
-    text-align: center;
-}
-
-#linha-horizontal {
-    width: 300px;
-    border: 1px solid #000;
-}
-
-.central {
-    text-align: center;
-    font-family: f;
-    padding: 5px;
-}
-
-.description {
-    text-align: center;
-}
-h1 {
-    font-family: 'Times New Roman', Times, serif;
 }
