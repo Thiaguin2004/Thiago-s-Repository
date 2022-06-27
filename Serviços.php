@@ -222,26 +222,26 @@ header("Location:Login.php");
                                             aria-current="true">
                                             Selecione o serviço
                                         </button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">Cadastro</button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">Cartão</button>
-                                        <button type="button" class="list-group-item list-group-item-action">Alteração
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Cadastro";?>
+                                        class="btn btn-light">Cadastro</button>
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Cartao";?>
+                                        class="btn btn-light">Cartão</button>
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Alteracao";?> class="btn btn-light">Alteração
                                             de dados</button>
-                                        <button type="button" class="list-group-item list-group-item-action">Cheque
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Cheque";?> class="btn btn-light">Cheque
                                             especial</button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">Transferências</button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">Pagamentos</button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">Extrato</button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">Tarifas</button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">Empréstimo</button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">Seguro</button>
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Transferencias";?>
+                                        class="btn btn-light">Transferências</button>
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Pagamentos";?>
+                                        class="btn btn-light">Pagamentos</button>
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Extrato";?>
+                                        class="btn btn-light">Extrato</button>
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Tarifas";?>
+                                        class="btn btn-light">Tarifas</button>
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Emprestimo";?>
+                                        class="btn btn-light">Empréstimo</button>
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Seguro";?>
+                                        class="btn btn-light">Seguro</button>
                                     </ul>
 
                                 </div>
@@ -282,18 +282,18 @@ header("Location:Login.php");
                                             aria-current="true">
                                             Selecione o Investimento
                                         </button>
-                                        <button type="button" class="list-group-item list-group-item-action">Tesouro
-                                            Direto</button>
-                                        <button type="button" class="list-group-item list-group-item-action">Fundos de
-                                            Investimento</button>
-                                        <button type="button" class="list-group-item list-group-item-action">Bolsa de
-                                            Valores</button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">Debêntures</button>
-                                        <button type="button" class="list-group-item list-group-item-action">Letras de
-                                            Crédito</button>
-                                        <button type="button" class="list-group-item list-group-item-action">Moedas
-                                            Digitais</button>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&TesouroDireto";?> class="btn btn-light">Tesouro
+                                            Direto</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&FundosDeInvestimento";?> class="btn btn-light">Fundos de
+                                            Investimento</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&BolsaDeValores";?> class="btn btn-light">Bolsa de
+                                            Valores</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Debentures";?>
+                                        class="btn btn-light">Debêntures</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&LetrasDeCredito";?> class="btn btn-light">Letras de
+                                            Crédito</a>
+                                        <a type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&MoedasDigitais";?> class="btn btn-light">Moedas
+                                            Digitais</a>
                                     </div>
 
                                 </div>
@@ -333,12 +333,12 @@ header("Location:Login.php");
                                             aria-current="true">
                                             Canais de Atendimento
                                         </button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">Whatsapp</button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">Ligação</button>
-                                        <button type="button"
-                                            class="list-group-item list-group-item-action">SMS</button>
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Whatsapp";?>
+                                        class="btn btn-light">Whatsapp</button>
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&Ligacao";?>
+                                        class="btn btn-light">Ligação</button>
+                                        <button type="button" href=<?php echo"/sistemakiwi/Central.php?token=$token&cpf=$cpf&SMS";?>
+                                        class="btn btn-light">SMS</button>
                                     </div>
 
                                 </div>
