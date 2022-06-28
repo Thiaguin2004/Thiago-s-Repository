@@ -64,10 +64,10 @@ header("Location:Login.php");
         <div class="container register">
             <div class="row">
                       <div class="col-md-9 register-right">
-                          <form method="GET" action="incluir_fila.php">
+                          <form method="GET" action="excluir_fila.php">
                           <div class="tab-content" id="myTabContent">
                               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                  <h3 class="register-heading">Tem certeza que quer entrar na fila para <?php echo $banco;?>?</h3>
+                                  <h3 class="register-heading">Você está na fila para <?php echo $banco;?></h3>
                                   <div class="row register-form">
                                       <div class="col-md-6">
                                         
@@ -78,9 +78,8 @@ header("Location:Login.php");
                                         <input type="text" name="token" class="form-control" hidden value="<?php echo $token;?>" />
                                         <input type="text" name="cpf" class="form-control" hidden value="<?php echo $cpf;?>" />
 
-
-                                        <input type="submit" class="btnRegister"  value="Entrar na fila">
-                                        <input style="text-align:center" href=<?php echo"/sistemakiwi/Serviços.php?token=$token&cpf=$cpf"; ?> class="btnRegister"  value="Cancelar">
+                                        <input type="submit" class="btnRegister"  value="Cancelar fila">
+                                        
                                         
                                           
                                 </div>
