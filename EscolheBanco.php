@@ -22,7 +22,7 @@ header("Location:Login.php");
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="Contato.css">
@@ -89,7 +89,7 @@ header("Location:Login.php");
                                 sob a forma de empresa
                                 pública, com patrimônio próprio e autonomia administrativa em todo o território
                                 nacional.</p>
-                            <a href=<?php echo"/sistemakiwi/Serviços.php?token=$token&cpf=$cpf"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
+                            <a href=<?php echo"/sistemakiwi/FormFila.php?token=$token&cpf=$cpf&banco=caixa"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
                         </div>
                     </div>
                 </div>
