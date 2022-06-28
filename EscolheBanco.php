@@ -3,6 +3,9 @@ $token = $_GET['token'];
 $servico = $_GET['servico'];
 if($token!="logado"){
 header("Location:Login.php");
+}
+if($cpf==1234){
+    header("Location:NaoTemAcesso.php");
 }?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -89,7 +92,7 @@ header("Location:Login.php");
                                 sob a forma de empresa
                                 pública, com patrimônio próprio e autonomia administrativa em todo o território
                                 nacional.</p>
-                            <a href=<?php echo"/sistemakiwi/FormFila.php?token=$token&cpf=$cpf&banco=caixa"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
+                            <a href=<?php echo"/sistemakiwi/FormFila.php?token=$token&cpf=$cpf&banco=Caixa"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +107,7 @@ header("Location:Login.php");
                                 sociedade de economia mista, com participação do Governo Federal do Brasil em 50%
                                 das
                                 ações. </p>
-                            <a href=<?php echo"/sistemakiwi/Serviços.php?token=$token&cpf=$cpf"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
+                            <a href=<?php echo"/sistemakiwi/FormFila.php?token=$token&cpf=$cpf&banco=Banco_do_Brasil"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +122,7 @@ header("Location:Login.php");
                                 atuando nas principais áreas do segmento financeiro, com empresas que se destacam
                                 por
                                 seu desempenho e resultados.</p>
-                            <a href=<?php echo"/sistemakiwi/Serviços.php?token=$token&cpf=$cpf"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
+                            <a href=<?php echo"/sistemakiwi/FormFila.php?token=$token&cpf=$cpf&banco=Bradesco"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
                         </div>
                     </div>
                 </div>
@@ -132,7 +135,7 @@ header("Location:Login.php");
                             <p class="card-text">É composto por cooperativas financeiras e empresas de apoio, que em
                                 conjunto oferecem aos associados serviços de conta corrente, crédito, investimento,
                                 consórcio, seguros, dentre outros.</p>
-                            <a href=<?php echo"/sistemakiwi/Serviços.php?token=$token&cpf=$cpf"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
+                            <a href=<?php echo"/sistemakiwi/FormFila.php?token=$token&cpf=$cpf&banco=Sicoob"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +146,7 @@ header("Location:Login.php");
                             <h4 style="font-family:'Times New Roman', Times, serif;" class="card-title">Nubank</h4>
                             <p class="card-text">O Nubank é uma instituição financeira e uma plataforma de serviços
                                 financeiros digital popularmente conhecida como banco digital ou fintech.</p>
-                            <a href=<?php echo"/sistemakiwi/Serviços.php?token=$token&cpf=$cpf"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
+                            <a href=<?php echo"/sistemakiwi/FormFila.php?token=$token&cpf=$cpf&banco=Nubank"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +159,7 @@ header("Location:Login.php");
                                 sociedade
                                 anônima. Caracteriza-se por ser um dos primeiros bancos digitais do Brasil, e pela
                                 ausência de taxas sobre serviços básicos.</p>
-                            <a href=<?php echo"/sistemakiwi/Serviços.php?token=$token&cpf=$cpf"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
+                            <a href=<?php echo"/sistemakiwi/FormFila.php?token=$token&cpf=$cpf&banco=Inter"; ?> class="btn btn-primary rounded-0 mb-2">Escolher</a>
                         </div>
                     </div>
                 </div>

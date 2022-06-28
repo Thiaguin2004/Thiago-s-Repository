@@ -60,6 +60,9 @@ header("Location:Login.php");
                         <li class="nav-item">
                             <a class="nav-link" href=<?php echo"/sistemakiwi/Equipe.php?token=$token&cpf=$cpf"; ?>>Equipe</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=<?php echo"/sistemakiwi/AreaRestrita.php?token=$token&cpf=$cpf"; ?>>Área Restrita</a>
+                        </li>
                     </ul>
 
                     <form class="form-inline my-2 my-lg-0">

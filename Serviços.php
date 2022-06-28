@@ -3,6 +3,9 @@ $token = $_GET['token'];
 $servico = $_GET['servico'];
 if($token!="logado"){
 header("Location:Login.php");
+}
+if($cpf==1234){
+    header("Location:NaoTemAcesso.php");
 }?>
 <!DOCTYPE html>
 <html lang="pt-BR">

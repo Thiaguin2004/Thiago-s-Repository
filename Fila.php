@@ -4,6 +4,9 @@ $servico = $_GET['servico'];
 $banco = $_GET['banco'];
 if($token!="logado"){
 header("Location:Login.php");
+}
+if($cpf==1234){
+    header("Location:NaoTemAcesso.php");
 }?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -61,24 +64,36 @@ header("Location:Login.php");
             </div>
         </div>
     </nav>
+    
         <div class="container register">
             <div class="row">
+            <div class="col-md-6">
+            <button class="btnRegister" id="refresh">Atualize a fila</button>
+</div>
                       <div class="col-md-9 register-right">
                           <form method="GET" action="excluir_fila.php">
                           <div class="tab-content" id="myTabContent">
                               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                   <h3 class="register-heading">Você está na fila para <?php echo $banco;?></h3>
+                                  
                                   <div class="row register-form">
-                                      <div class="col-md-6">
+                                      <div class="col-md-12">
                                         
+                                      <h4>Agradecemos sua preferência, agora é só aguardar sua vez!
+                                  </h4>
+                                  <h4>Utilize o botão acima para atualizar sua fila.</h4>
                                         
                                         <input type="text" name="logando" class="form-control" hidden value="logando" />
                                         <input type="text" name="servico" class="form-control" hidden value="<?php echo $servico;?>" />
                                         <input type="text" name="banco" class="form-control" hidden value="<?php echo $banco;?>" />
                                         <input type="text" name="token" class="form-control" hidden value="<?php echo $token;?>" />
                                         <input type="text" name="cpf" class="form-control" hidden value="<?php echo $cpf;?>" />
+                                        <input type="text" name="cpfusuario" class="form-control" hidden value="<?php echo $cpf;?>" />
 
                                         <input type="submit" class="btnRegister"  value="Cancelar fila">
+                                        </form>
+                                        
+                                        
                                         
                                         
                                           
@@ -88,6 +103,13 @@ header("Location:Login.php");
                     </div>
                 </div>
             </div>
-</form>
+
       </body>
 </html>
+<script>
+    var btn = document.querySelector("#refresh");
+btn.addEventListener("click", function() {
+    
+    location.reload();
+});
+</script>
